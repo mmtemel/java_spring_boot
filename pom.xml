@@ -19,6 +19,11 @@
 	</properties>
 	<dependencies>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
+
 		<!-- added later -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -85,6 +90,13 @@
 			<scope>test</scope>
 		</dependency>
 	
+ 
+	<!-- error solving -->
+   <dependency>
+     <groupId>org.springframework.hateoas</groupId>
+     <artifactId>spring-hateoas</artifactId>
+     <!-- <version>0.1.0.RELEASE</version> -->
+   </dependency>
  </dependencies>
 
 	<build>

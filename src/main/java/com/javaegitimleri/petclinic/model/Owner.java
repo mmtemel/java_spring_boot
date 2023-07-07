@@ -3,6 +3,9 @@ package com.javaegitimleri.petclinic.model;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+// @XmlRootElement
 public class Owner {
     private long id;
     private String firstName;
@@ -34,6 +37,8 @@ public class Owner {
         this.lastName = lastName;
     }
 
+    // @XmlTransient
+    @JsonIgnore
     public Set<Pet> getPets() {
         return pets;
     }
