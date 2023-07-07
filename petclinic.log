@@ -1202,3 +1202,493 @@ Unconditional classes:
 2023-07-07T03:44:29.404+03:00 DEBUG 46831 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
 2023-07-07T03:44:29.405+03:00 DEBUG 46831 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
 2023-07-07T03:44:29.408+03:00 DEBUG 46831 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-07T04:19:28.505+03:00  INFO 46831 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-07T04:19:28.593+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 46831 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:19:28.593+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:19:28.754+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-07-07T04:19:28.755+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-07T04:19:28.755+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-07T04:19:28.761+03:00  INFO 46831 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-07T04:19:28.761+03:00  INFO 46831 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 166 ms
+2023-07-07T04:19:28.793+03:00 DEBUG 46831 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-07T04:19:28.812+03:00  INFO 46831 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-07-07T04:19:28.821+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-07T04:19:28.839+03:00 DEBUG 46831 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-07T04:19:28.844+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-07T04:19:28.846+03:00 DEBUG 46831 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-07T04:19:28.905+03:00  INFO 46831 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-07T04:19:28.909+03:00  INFO 46831 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-07-07T04:19:28.922+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-07-07T04:19:28.930+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.355 seconds (process running for 7632.578)
+2023-07-07T04:19:28.932+03:00  INFO 46831 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.thymeleaf.enabled) matched (OnPropertyCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration.ThymeleafViewResolverConfiguration#thymeleafViewResolver matched:
+      - @ConditionalOnMissingBean (names: thymeleafViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration#resourceUrlEncodingFilter:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarAssetLocator (OnEnabledResourceChainCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-07-07T04:19:38.453+03:00  INFO 46831 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-07T04:19:38.453+03:00  INFO 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-07T04:19:38.453+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-07T04:19:38.453+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-07-07T04:19:38.453+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-07-07T04:19:38.454+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@ce6bf58
+2023-07-07T04:19:38.455+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@22150b4
+2023-07-07T04:19:38.455+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-07T04:19:38.455+03:00  INFO 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-07T04:19:38.456+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:19:38.456+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:19:38.458+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:19:38.483+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-07T04:19:38.508+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/petclinic.css", parameters={}
+2023-07-07T04:19:38.509+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:19:38.511+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-07T04:19:48.344+03:00  INFO 46831 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-07T04:19:48.396+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 46831 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:19:48.396+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:19:48.537+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-07-07T04:19:48.538+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-07T04:19:48.538+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-07T04:19:48.541+03:00  INFO 46831 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-07T04:19:48.541+03:00  INFO 46831 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2023-07-07T04:19:48.562+03:00 DEBUG 46831 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-07T04:19:48.576+03:00  INFO 46831 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-07-07T04:19:48.581+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-07T04:19:48.593+03:00 DEBUG 46831 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-07T04:19:48.595+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-07T04:19:48.598+03:00 DEBUG 46831 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-07T04:19:48.646+03:00  INFO 46831 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-07T04:19:48.648+03:00  INFO 46831 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-07-07T04:19:48.660+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-07-07T04:19:48.669+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.286 seconds (process running for 7652.316)
+2023-07-07T04:19:48.671+03:00  INFO 46831 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.thymeleaf.enabled) found different value in property 'spring.thymeleaf.enabled' (OnPropertyCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-07-07T04:19:51.448+03:00  INFO 46831 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-07T04:19:51.449+03:00  INFO 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-07T04:19:51.449+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-07T04:19:51.449+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-07-07T04:19:51.449+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-07-07T04:19:51.452+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3fe6be7e
+2023-07-07T04:19:51.453+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@312157f2
+2023-07-07T04:19:51.454+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-07T04:19:51.454+03:00  INFO 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-07-07T04:19:51.456+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:19:51.457+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:19:51.459+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:19:51.460+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.servlet.view.InternalResourceView  : View name 'owners', model {owners=[Owner [id=1, firstName=Kenan, lastName=Sevindik], Owner [id=2, firstName=Muammer, lastName=Yücel], Owner [id=3, firstName=Hümeyra, lastName=Sevindik], Owner [id=4, firstName=Salim, lastName=Sevindik]]}
+2023-07-07T04:19:51.460+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/WEB-INF/jsp/owners.jsp]
+2023-07-07T04:19:51.461+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/WEB-INF/jsp/owners.jsp", parameters={}
+2023-07-07T04:19:51.463+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:19:51.464+03:00  WARN 46831 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : "Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/owners.jsp]"
+2023-07-07T04:19:51.464+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-07T04:19:51.465+03:00  WARN 46831 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource WEB-INF/jsp/owners.jsp.]
+2023-07-07T04:19:51.465+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 404
+2023-07-07T04:19:51.466+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-07T04:19:51.467+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-07T04:19:51.469+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-07-07T04:19:51.475+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-07T04:27:53.097+03:00  INFO 46831 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 21 class path changes (0 additions, 14 deletions, 7 modifications)
+2023-07-07T04:27:53.178+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 46831 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:27:53.178+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:27:53.184+03:00  WARN 46831 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.javaegitimleri.petclinic.PetClinicApplication]
+2023-07-07T04:27:53.198+03:00 ERROR 46831 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.javaegitimleri.petclinic.PetClinicApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:178) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:415) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:287) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:768) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:589) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at com.javaegitimleri.petclinic.PetClinicApplication.main(PetClinicApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+Caused by: java.io.FileNotFoundException: class path resource [com/javaegitimleri/petclinic/PetClinicApplication.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:610) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:579) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:557) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:241) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:164) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	... 16 common frames omitted
+
+2023-07-07T04:28:02.666+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 46831 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:28:02.669+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:28:03.151+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-07-07T04:28:03.151+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-07T04:28:03.152+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-07T04:28:03.156+03:00  INFO 46831 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-07T04:28:03.156+03:00  INFO 46831 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 484 ms
+2023-07-07T04:28:03.198+03:00 DEBUG 46831 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-07T04:28:03.220+03:00  INFO 46831 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-07-07T04:28:03.232+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-07T04:28:03.256+03:00 DEBUG 46831 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-07T04:28:03.262+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-07T04:28:03.266+03:00 DEBUG 46831 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-07T04:28:03.331+03:00  INFO 46831 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-07T04:28:03.335+03:00  INFO 46831 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-07-07T04:28:03.359+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-07-07T04:28:03.379+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.759 seconds (process running for 8147.026)
+2023-07-07T04:28:03.382+03:00  INFO 46831 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-07T04:29:21.892+03:00  INFO 46831 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 21 class path changes (0 additions, 0 deletions, 21 modifications)
+2023-07-07T04:29:22.022+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 46831 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:29:22.022+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:29:22.311+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-07-07T04:29:22.312+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-07T04:29:22.313+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-07T04:29:22.321+03:00  INFO 46831 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-07T04:29:22.321+03:00  INFO 46831 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 286 ms
+2023-07-07T04:29:22.383+03:00 DEBUG 46831 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-07T04:29:22.437+03:00  INFO 46831 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-07-07T04:29:22.453+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-07T04:29:22.484+03:00 DEBUG 46831 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-07T04:29:22.487+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-07T04:29:22.490+03:00 DEBUG 46831 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-07T04:29:22.542+03:00  INFO 46831 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-07T04:29:22.545+03:00  INFO 46831 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-07-07T04:29:22.559+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-07-07T04:29:22.572+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.587 seconds (process running for 8226.219)
+2023-07-07T04:29:22.574+03:00  INFO 46831 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-07T04:29:25.578+03:00  INFO 46831 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-07T04:29:25.578+03:00  INFO 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-07T04:29:25.578+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-07T04:29:25.578+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-07-07T04:29:25.578+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-07-07T04:29:25.579+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2dbe4ce3
+2023-07-07T04:29:25.579+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2379a724
+2023-07-07T04:29:25.580+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-07T04:29:25.580+03:00  INFO 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-07T04:29:25.580+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:29:25.581+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:29:25.582+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:29:25.582+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.w.servlet.view.InternalResourceView  : View name 'owners', model {owners=[Owner [id=1, firstName=Kenan, lastName=Sevindik], Owner [id=2, firstName=Muammer, lastName=Yücel], Owner [id=3, firstName=Hümeyra, lastName=Sevindik], Owner [id=4, firstName=Salim, lastName=Sevindik]]}
+2023-07-07T04:29:25.582+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/WEB-INF/jsp/owners.jsp]
+2023-07-07T04:29:25.583+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/WEB-INF/jsp/owners.jsp", parameters={}
+2023-07-07T04:29:25.584+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:29:25.584+03:00  WARN 46831 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : "Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/owners.jsp]"
+2023-07-07T04:29:25.584+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-07T04:29:25.585+03:00  WARN 46831 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource WEB-INF/jsp/owners.jsp.]
+2023-07-07T04:29:25.585+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 404
+2023-07-07T04:29:25.586+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-07T04:29:25.586+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-07T04:29:25.587+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-07-07T04:29:25.591+03:00 DEBUG 46831 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-07T04:29:27.051+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:29:27.051+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:29:27.051+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:29:27.052+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.w.servlet.view.InternalResourceView  : View name 'owners', model {owners=[Owner [id=1, firstName=Kenan, lastName=Sevindik], Owner [id=2, firstName=Muammer, lastName=Yücel], Owner [id=3, firstName=Hümeyra, lastName=Sevindik], Owner [id=4, firstName=Salim, lastName=Sevindik]]}
+2023-07-07T04:29:27.052+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/WEB-INF/jsp/owners.jsp]
+2023-07-07T04:29:27.052+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/WEB-INF/jsp/owners.jsp", parameters={}
+2023-07-07T04:29:27.052+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:29:27.052+03:00  WARN 46831 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : "Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/owners.jsp]"
+2023-07-07T04:29:27.053+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-07T04:29:27.053+03:00  WARN 46831 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource WEB-INF/jsp/owners.jsp.]
+2023-07-07T04:29:27.053+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 404
+2023-07-07T04:29:27.053+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-07T04:29:27.053+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-07T04:29:27.054+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-07-07T04:29:27.057+03:00 DEBUG 46831 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-07T04:29:27.268+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:29:27.268+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:29:27.269+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:29:27.269+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.servlet.view.InternalResourceView  : View name 'owners', model {owners=[Owner [id=1, firstName=Kenan, lastName=Sevindik], Owner [id=2, firstName=Muammer, lastName=Yücel], Owner [id=3, firstName=Hümeyra, lastName=Sevindik], Owner [id=4, firstName=Salim, lastName=Sevindik]]}
+2023-07-07T04:29:27.269+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/WEB-INF/jsp/owners.jsp]
+2023-07-07T04:29:27.269+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/WEB-INF/jsp/owners.jsp", parameters={}
+2023-07-07T04:29:27.270+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:29:27.270+03:00  WARN 46831 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : "Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/owners.jsp]"
+2023-07-07T04:29:27.270+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-07T04:29:27.270+03:00  WARN 46831 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource WEB-INF/jsp/owners.jsp.]
+2023-07-07T04:29:27.270+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 404
+2023-07-07T04:29:27.270+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-07T04:29:27.271+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-07T04:29:27.271+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-07-07T04:29:27.274+03:00 DEBUG 46831 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-07T04:29:27.428+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:29:27.428+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:29:27.429+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:29:27.429+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.w.servlet.view.InternalResourceView  : View name 'owners', model {owners=[Owner [id=1, firstName=Kenan, lastName=Sevindik], Owner [id=2, firstName=Muammer, lastName=Yücel], Owner [id=3, firstName=Hümeyra, lastName=Sevindik], Owner [id=4, firstName=Salim, lastName=Sevindik]]}
+2023-07-07T04:29:27.429+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/WEB-INF/jsp/owners.jsp]
+2023-07-07T04:29:27.429+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/WEB-INF/jsp/owners.jsp", parameters={}
+2023-07-07T04:29:27.430+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:29:27.430+03:00  WARN 46831 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : "Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/owners.jsp]"
+2023-07-07T04:29:27.430+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-07T04:29:27.430+03:00  WARN 46831 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource WEB-INF/jsp/owners.jsp.]
+2023-07-07T04:29:27.430+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 404
+2023-07-07T04:29:27.430+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-07T04:29:27.431+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-07T04:29:27.432+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-07-07T04:29:27.435+03:00 DEBUG 46831 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-07T04:30:24.472+03:00  INFO 46831 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 21 class path changes (0 additions, 14 deletions, 7 modifications)
+2023-07-07T04:30:24.603+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 46831 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:30:24.604+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:30:24.618+03:00  WARN 46831 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.javaegitimleri.petclinic.PetClinicApplication]
+2023-07-07T04:30:24.633+03:00 ERROR 46831 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.javaegitimleri.petclinic.PetClinicApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:178) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:415) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:287) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:768) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:589) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at com.javaegitimleri.petclinic.PetClinicApplication.main(PetClinicApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+Caused by: java.io.FileNotFoundException: class path resource [com/javaegitimleri/petclinic/PetClinicApplication.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:610) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:579) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:557) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:241) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:164) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	... 16 common frames omitted
+
+2023-07-07T04:32:08.186+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 46831 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:32:08.186+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:32:08.348+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-07-07T04:32:08.348+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-07T04:32:08.348+03:00  INFO 46831 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-07T04:32:08.352+03:00  INFO 46831 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-07T04:32:08.352+03:00  INFO 46831 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 165 ms
+2023-07-07T04:32:08.370+03:00 DEBUG 46831 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-07T04:32:08.383+03:00  INFO 46831 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-07-07T04:32:08.389+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-07T04:32:08.399+03:00 DEBUG 46831 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-07T04:32:08.402+03:00 DEBUG 46831 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-07T04:32:08.405+03:00 DEBUG 46831 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-07T04:32:08.453+03:00  INFO 46831 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-07T04:32:08.455+03:00  INFO 46831 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-07-07T04:32:08.466+03:00  INFO 46831 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-07-07T04:32:08.475+03:00  INFO 46831 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.301 seconds (process running for 8392.123)
+2023-07-07T04:32:08.478+03:00  INFO 46831 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-07T04:32:25.456+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 92965 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:32:25.457+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:32:25.501+03:00  INFO 92965 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-07T04:32:25.502+03:00  INFO 92965 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-07T04:32:26.162+03:00  INFO 92965 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-07-07T04:32:26.168+03:00  INFO 92965 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-07T04:32:26.168+03:00  INFO 92965 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-07T04:32:26.206+03:00  INFO 92965 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-07T04:32:26.207+03:00  INFO 92965 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 705 ms
+2023-07-07T04:32:26.309+03:00 DEBUG 92965 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-07T04:32:26.360+03:00  INFO 92965 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-07-07T04:32:26.401+03:00 DEBUG 92965 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-07T04:32:26.453+03:00 DEBUG 92965 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-07T04:32:26.471+03:00 DEBUG 92965 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-07T04:32:26.492+03:00 DEBUG 92965 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-07T04:32:26.633+03:00  INFO 92965 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-07T04:32:26.640+03:00  INFO 92965 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-07-07T04:32:26.688+03:00  INFO 92965 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-07-07T04:32:26.700+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Started PetClinicApplication in 1.503 seconds (process running for 1.708)
+2023-07-07T04:32:32.828+03:00  INFO 92965 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-07T04:32:32.828+03:00  INFO 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-07T04:32:32.828+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-07T04:32:32.828+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-07-07T04:32:32.829+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-07-07T04:32:32.830+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@552fcc1f
+2023-07-07T04:32:32.830+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1c761278
+2023-07-07T04:32:32.831+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-07T04:32:32.831+03:00  INFO 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-07T04:32:32.850+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:32:32.857+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:32:32.868+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:32:32.869+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.w.servlet.view.InternalResourceView  : View name 'owners', model {owners=[Owner [id=1, firstName=Kenan, lastName=Sevindik], Owner [id=2, firstName=Muammer, lastName=Yücel], Owner [id=3, firstName=Hümeyra, lastName=Sevindik], Owner [id=4, firstName=Salim, lastName=Sevindik]]}
+2023-07-07T04:32:32.871+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/WEB-INF/jsp/owners.jsp]
+2023-07-07T04:32:32.873+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/WEB-INF/jsp/owners.jsp", parameters={}
+2023-07-07T04:32:32.876+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:32:32.877+03:00  WARN 92965 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : "Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/owners.jsp]"
+2023-07-07T04:32:32.877+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-07T04:32:32.882+03:00  WARN 92965 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource WEB-INF/jsp/owners.jsp.]
+2023-07-07T04:32:32.884+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 404
+2023-07-07T04:32:32.885+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-07T04:32:32.887+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-07T04:32:32.889+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-07-07T04:32:32.897+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-07T04:33:19.147+03:00  INFO 92965 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 21 class path changes (0 additions, 14 deletions, 7 modifications)
+2023-07-07T04:33:19.332+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 92965 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:33:19.333+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:33:19.339+03:00  WARN 92965 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.javaegitimleri.petclinic.PetClinicApplication]
+2023-07-07T04:33:19.358+03:00 ERROR 92965 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.javaegitimleri.petclinic.PetClinicApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:178) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:415) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:287) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:768) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:589) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at com.javaegitimleri.petclinic.PetClinicApplication.main(PetClinicApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+Caused by: java.io.FileNotFoundException: class path resource [com/javaegitimleri/petclinic/PetClinicApplication.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) ~[spring-boot-3.2.0-SNAPSHOT.jar:3.2.0-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:610) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:579) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:557) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:241) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:164) ~[spring-context-6.1.0-SNAPSHOT.jar:6.1.0-SNAPSHOT]
+	... 16 common frames omitted
+
+2023-07-07T04:34:25.890+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 18.0.2-ea with PID 92965 (/home/mtemel/java_projects/petclinic/target/classes started by mtemel in /home/mtemel/java_projects/petclinic)
+2023-07-07T04:34:25.894+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2023-07-07T04:34:26.188+03:00  INFO 92965 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-07-07T04:34:26.188+03:00  INFO 92965 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-07T04:34:26.188+03:00  INFO 92965 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-07T04:34:26.194+03:00  INFO 92965 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-07T04:34:26.195+03:00  INFO 92965 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 285 ms
+2023-07-07T04:34:26.226+03:00 DEBUG 92965 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-07T04:34:26.247+03:00  INFO 92965 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-07-07T04:34:26.256+03:00 DEBUG 92965 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-07T04:34:26.273+03:00 DEBUG 92965 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-07T04:34:26.276+03:00 DEBUG 92965 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-07T04:34:26.278+03:00 DEBUG 92965 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-07T04:34:26.369+03:00  INFO 92965 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-07T04:34:26.373+03:00  INFO 92965 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-07-07T04:34:26.395+03:00  INFO 92965 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-07-07T04:34:26.406+03:00  INFO 92965 --- [restartedMain] c.j.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.554 seconds (process running for 121.413)
+2023-07-07T04:34:26.408+03:00  INFO 92965 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-07T04:34:45.029+03:00  INFO 92965 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-07T04:34:45.029+03:00  INFO 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-07T04:34:45.030+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-07T04:34:45.030+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-07-07T04:34:45.030+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-07-07T04:34:45.031+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7f13571f
+2023-07-07T04:34:45.032+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@71d4a68d
+2023-07-07T04:34:45.032+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-07T04:34:45.032+03:00  INFO 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-07T04:34:45.033+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/actuator/health", parameters={}
+2023-07-07T04:34:45.047+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-07-07T04:34:45.074+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@1193d531]
+2023-07-07T04:34:45.084+03:00 DEBUG 92965 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-07T04:34:54.924+03:00 DEBUG 92965 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/actuator/env", parameters={}
+2023-07-07T04:34:54.936+03:00 DEBUG 92965 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-07-07T04:34:54.938+03:00 DEBUG 92965 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [org.springframework.boot.actuate.env.EnvironmentEndpoint$EnvironmentDescriptor@66788043]
+2023-07-07T04:34:54.949+03:00 DEBUG 92965 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-07T04:35:00.860+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/owners", parameters={}
+2023-07-07T04:35:00.861+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaegitimleri.petclinic.web.PetClinicController#getOwners()
+2023-07-07T04:35:00.862+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-07-07T04:35:00.862+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.w.servlet.view.InternalResourceView  : View name 'owners', model {owners=[Owner [id=1, firstName=Kenan, lastName=Sevindik], Owner [id=2, firstName=Muammer, lastName=Yücel], Owner [id=3, firstName=Hümeyra, lastName=Sevindik], Owner [id=4, firstName=Salim, lastName=Sevindik]]}
+2023-07-07T04:35:00.863+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/WEB-INF/jsp/owners.jsp]
+2023-07-07T04:35:00.863+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/WEB-INF/jsp/owners.jsp", parameters={}
+2023-07-07T04:35:00.865+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-07T04:35:00.865+03:00  WARN 92965 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : "Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/owners.jsp]"
+2023-07-07T04:35:00.865+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-07T04:35:00.866+03:00  WARN 92965 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource WEB-INF/jsp/owners.jsp.]
+2023-07-07T04:35:00.866+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 404
+2023-07-07T04:35:00.866+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-07T04:35:00.867+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-07T04:35:00.868+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-07-07T04:35:00.872+03:00 DEBUG 92965 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
