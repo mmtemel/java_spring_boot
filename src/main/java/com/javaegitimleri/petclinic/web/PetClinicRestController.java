@@ -32,8 +32,8 @@ public class PetClinicRestController {
     private PetClinicService petClinicService;
 
 
+	/* @ResponseStatus(HttpStatus.OK)
     @RequestMapping(method = RequestMethod.DELETE, value = "/owner/{id}")
-	@ResponseStatus(HttpStatus.OK)
 	public ResponseEntity<?> deleteOwner(@PathVariable("id") Long id) {
 		try {
 			petClinicService.deleteOwner(id);
@@ -43,9 +43,9 @@ public class PetClinicRestController {
 		} catch (Exception ex) {
 			throw new InternalServerException(ex);
 		}
-	}
+	} */
 
-    /* @RequestMapping(method = RequestMethod.DELETE, value = "/owner/{id}")
+    @RequestMapping(method = RequestMethod.DELETE, value = "/owner/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public ResponseEntity<?> deleteOwner(@PathVariable("id") Long id) {
 		try {
@@ -56,7 +56,7 @@ public class PetClinicRestController {
 		} catch (Exception ex) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 		}
-	} */
+	}
 
     @RequestMapping(method = RequestMethod.PUT, value = "/owner/{id}")
 	public ResponseEntity<?> updateOwner(@PathVariable("id") Long id, @RequestBody Owner ownerRequest) {
