@@ -4,11 +4,8 @@ import java.net.URI;
 import java.util.List;
 
 
-import org.apache.tomcat.util.file.ConfigurationSource.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.actuate.endpoint.web.Link;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.javaegitimleri.petclinic.exception.InternalServerException;
@@ -31,21 +29,34 @@ public class PetClinicRestController {
     @Autowired
     private PetClinicService petClinicService;
 
+	@RequestMapping("/login.html")
+	public ModelAndView login() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("login");
+		return mav;
+	}
 
-	/* @ResponseStatus(HttpStatus.OK)
-    @RequestMapping(method = RequestMethod.DELETE, value = "/owner/{id}")
-	public ResponseEntity<?> deleteOwner(@PathVariable("id") Long id) {
+	@RequestMapping(value = {"/", "/index.html"})
+	public ModelAndView index() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("index");
+		return mav;
+	}
+
+	@RequestMapping(method = RequestMethod.DELETE, value = "/owner/{id}")
+	@ResponseStatus(HttpStatus.OK)
+	public void deleteOwner(@PathVariable("id") Long id) {
 		try {
+			petClinicService.findOwner(id);
 			petClinicService.deleteOwner(id);
-            return ResponseEntity.ok().build();
 		} catch (OwnerNotFoundException ex) {
 			throw ex;
 		} catch (Exception ex) {
 			throw new InternalServerException(ex);
 		}
-	} */
+	}
 
-    @RequestMapping(method = RequestMethod.DELETE, value = "/owner/{id}")
+    /* @RequestMapping(method = RequestMethod.DELETE, value = "/owner/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public ResponseEntity<?> deleteOwner(@PathVariable("id") Long id) {
 		try {
@@ -56,7 +67,7 @@ public class PetClinicRestController {
 		} catch (Exception ex) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 		}
-	}
+	} */
 
     @RequestMapping(method = RequestMethod.PUT, value = "/owner/{id}")
 	public ResponseEntity<?> updateOwner(@PathVariable("id") Long id, @RequestBody Owner ownerRequest) {

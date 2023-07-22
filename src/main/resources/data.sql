@@ -22,3 +22,13 @@ INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (10, 'Karaburun', '2009-0
 INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (11, 'Twetty', '2000-03-09', 7);
 INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (12, 'Tarçın', '2000-06-24', 8);
 INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (13, 'Sarı', '2002-06-08', 9);
+
+INSERT INTO USERS VALUES('user1','{bcrypt}$2a$10$K35QiHSc62Jii//D5hpaW.CcrEVbVLJNI9nLnO64wgDxb27r7oZTi',TRUE);
+INSERT INTO USERS VALUES('user2','{bcrypt}$2a$10$ZpBnZxtddZe152StKJEAV.RoPRbKe4QnFlQ06eMtjDKQpl.ntS7.m',TRUE);
+INSERT INTO USERS VALUES('user3','{bcrypt}$2a$10$21dbe2zwM2uaJz7guunz3e68K5FEy1hqJ11zlNmk0Pwax7R9VZhoG',TRUE);
+
+INSERT INTO AUTHORITIES VALUES('user1','ROLE_USER');
+INSERT INTO AUTHORITIES VALUES('user2','ROLE_USER');
+INSERT INTO AUTHORITIES VALUES('user2','ROLE_EDITOR');
+INSERT INTO AUTHORITIES VALUES('user3','ROLE_USER');
+INSERT INTO AUTHORITIES VALUES('user3','ROLE_ADMIN');

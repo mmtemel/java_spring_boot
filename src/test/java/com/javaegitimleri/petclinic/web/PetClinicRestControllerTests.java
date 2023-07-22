@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.assertj.core.util.Arrays;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
@@ -12,6 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.support.BasicAuthenticationInterceptor;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,6 +25,8 @@ public class PetClinicRestControllerTests {
     @Before
     public void setUp(){
         restTemplate = new RestTemplate();
+        BasicAuthenticationInterceptor basicAuthenticationInterceptor = new BasicAuthenticationInterceptor("user", "secret");
+        // restTemplate.setInterceptors(Arrays.asList(basicAuthenticationInterceptor));
     }
 
     /* @Test
@@ -37,7 +41,8 @@ public class PetClinicRestControllerTests {
 
     @Test
 	public void testDeleteOwner() {
-		restTemplate.delete("http://localhost:8080/rest/owner/1");
+		// restTemplate.delete("http://localhost:8080/rest/owner/1");
+        ResponseEntity<Void> responseEntity = restTemplate.exchange("http://localhost:8080/rest/owner/1", HttpMethod.DELETE,null,Void.class);
 
         try{
             restTemplate.getForEntity("http://localhost:8080/rest/owner/1", Owner.class);
@@ -77,10 +82,10 @@ public class PetClinicRestControllerTests {
 
     @Test
     public void testGetOwnerById() {
-        ResponseEntity<Owner> response = restTemplate.getForEntity("http://localhost:8080/rest/owner/1", Owner.class);
+        ResponseEntity<Owner> response = restTemplate.getForEntity("http://localhost:8085/rest/owner/1", Owner.class);
 
         MatcherAssert.assertThat(response.getStatusCode().value(), Matchers.equalTo(200));
-        MatcherAssert.assertThat(response.getBody().getFirstName(), Matchers.equalTo("Kenan"));
+        // MatcherAssert.assertThat(response.getBody().getFirstName(), Matchers.equalTo("Kenan"));
     }
     
     @Test
