@@ -23,6 +23,10 @@ INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (11, 'Twetty', '2000-03-0
 INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (12, 'Tarçın', '2000-06-24', 8);
 INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (13, 'Sarı', '2002-06-08', 9);
 
+INSERT INTO t_vet (id,first_name,last_name) VALUES (14, 'Ali', 'Güç');
+INSERT INTO t_vet (id,first_name,last_name) VALUES (15, 'Bekir', 'Sağ');
+INSERT INTO t_vet (id,first_name,last_name) VALUES (16, 'Esma', 'Kul');
+
 INSERT INTO USERS VALUES('user1','{bcrypt}$2a$10$K35QiHSc62Jii//D5hpaW.CcrEVbVLJNI9nLnO64wgDxb27r7oZTi',TRUE);
 INSERT INTO USERS VALUES('user2','{bcrypt}$2a$10$ZpBnZxtddZe152StKJEAV.RoPRbKe4QnFlQ06eMtjDKQpl.ntS7.m',TRUE);
 INSERT INTO USERS VALUES('user3','{bcrypt}$2a$10$21dbe2zwM2uaJz7guunz3e68K5FEy1hqJ11zlNmk0Pwax7R9VZhoG',TRUE);

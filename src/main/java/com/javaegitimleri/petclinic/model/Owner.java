@@ -16,32 +16,23 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name="t_owner")
 @XmlRootElement
-public class Owner {
-    @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator="petClinicSeqGen")
-    @SequenceGenerator(name="petClinicSeqGen",sequenceName="petclinic_sequence", allocationSize=1)
-    private long id;
+public class Owner extends BaseEntity{
     
+    @NotEmpty
     @Column(name="first_name")
     private String firstName;
 
+    @NotEmpty(message = "empty lastname is not allowed")
     @Column(name="last_name")
     private String lastName;
 
     @OneToMany(mappedBy="owner")
     private Set<Pet> pets = new HashSet<>();
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -71,6 +62,6 @@ public class Owner {
 
     @Override
     public String toString() {
-        return "Owner [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+        return "Owner [id=" + getId() + ", firstName=" + firstName + ", lastName=" + lastName + "]";
     }
 }

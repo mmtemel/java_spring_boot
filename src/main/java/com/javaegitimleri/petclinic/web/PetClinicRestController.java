@@ -5,6 +5,7 @@ import java.util.List;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,8 @@ import com.javaegitimleri.petclinic.exception.InternalServerException;
 import com.javaegitimleri.petclinic.exception.OwnerNotFoundException;
 import com.javaegitimleri.petclinic.model.Owner;
 import com.javaegitimleri.petclinic.service.PetClinicService;
+
+import jakarta.validation.ConstraintViolationException;
 
 @RestController
 @RequestMapping("/rest")
@@ -90,13 +93,18 @@ public class PetClinicRestController {
         Long id = owner.getId();
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(id).toUri();
         return ResponseEntity.created(location).build();
-        } catch (Exception ex) {
+        } catch (ConstraintViolationException ex) {
+			return ResponseEntity.status(HttpStatus.PRECONDITION_FAILED).build();
+		}
+		 catch (Exception ex) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
+	@Cacheable("allOwners")
     @RequestMapping(method=RequestMethod.GET,value="/owners")
     public ResponseEntity<List<Owner>> getOwners() {
+		System.out.println(">>>inside getOwners...");
         List<Owner> owners = petClinicService.findOwners();
         return ResponseEntity.ok(owners);
     }
